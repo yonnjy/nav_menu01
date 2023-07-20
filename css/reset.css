@@ -1,0 +1,48 @@
+html {
+    font-size: 6.25%;
+}
+
+@media (max-width: 500px) {
+    html {
+        /* 아이폰에서도 대응을 한다 */
+        /* 390디바이스를 기준으로 폰트사이즈를 pc처럼 보여지게 16/390*6.25 vw */
+        font-size: 0.256410256vw;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 16rem;
+    line-height: 1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.inner {
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: 0 15rem;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.r_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
